@@ -20,26 +20,8 @@ console.log(galleryEl)
 
 
 
+new SimpleLightbox('.gallery a', {captionsData: 'alt',captionDelay :250});
 
-galleryEl.addEventListener("click", /* _.throttle(onShowGallery, 250) */onShowGallery)
 
-function onShowGallery(e) {
-    e.preventDefault()
-    const { preview, original, description } = galleryItems
-    if (!e.target.classList.contains('gallery__image')) {
-        return
-    }
-/* 
-    var lightbox = new SimpleLightbox('.gallery a', { options }); */
-
-const gallery = new SimpleLightbox('.gallery a', /* {captionsData,captionDelay} */);
-gallery.on('show.simplelightbox', function () {
-/*     console.log(e.target.alt)
-    gallery.captionsData= `${e.target.alt}`;
-    gallery.captionDelay = 250
-    */
-
-});
-}
 
 
