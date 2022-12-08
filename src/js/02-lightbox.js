@@ -32,7 +32,7 @@ function onShowGallery(e) {
 /* 
     var lightbox = new SimpleLightbox('.gallery a', { options }); */
 
-const gallery = new SimpleLightbox('.gallery a', {captionsData,captionDelay});
+const gallery = new SimpleLightbox('.gallery a', /* {captionsData,captionDelay} */);
 gallery.on('show.simplelightbox', function () {
 /*     console.log(e.target.alt)
     gallery.captionsData= `${e.target.alt}`;
