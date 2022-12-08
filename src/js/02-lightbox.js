@@ -34,10 +34,10 @@ function onShowGallery(e) {
 
 const gallery = new SimpleLightbox('.gallery a', {captionsData,captionDelay});
 gallery.on('show.simplelightbox', function () {
-    console.log(e.target.alt)
+/*     console.log(e.target.alt)
     gallery.captionsData= `${e.target.alt}`;
     gallery.captionDelay = 250
-   
+    */
 
 });
 }
